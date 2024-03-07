@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family:'SuperMario' ;
+    src: url(../font/SuperMario256.ttf);
+}
+body{
+    background: url(../img/fondo2.jpg) no-repeat center fixed;
+    background-size: 100% 100%;
+    font-family: 'SuperMario';
+}
+h1{
+    
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    color: brown;
+    /* La letra la tengo que hacer mas pequeña porque mi pantalla no permite que sea tan grande porque se me desplaza */
+}
+.caja{
+    border: double red;
+    border-radius: 15px 0 15px 0;
+    /* Cambio los tamaños de la caja para que se pueda parecer a la imagen */
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 50px;
+    background: url(../img/fondo.jpg) no-repeat center fixed  ;
+    background-size: 100% 100%;
+}
+.naranja{
+    /* Hago los gtamaños mas pequeños para que se pueda ajustar mejor a la imagen */
+    width: 150px ;
+    height: 60px ;
+    background-color: rgb(255, 149, 0);
+    position: relative;
+    border-radius: 20px;
+    font-size: 9px;
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+}
+.texto{
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.naranja>div img{
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
+.tres, .cuatro{
+    left: 200px;
+    top: -160px;
+}
+.gorro1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gorro2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.gorro3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.gorro4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.logo{
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.estrella{
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    top: 260px;
+    left: 25%;
+
+}
+.estrella:hover{
+    filter: drop-shadow(10px 10px  10px  rgb(0, 0, 0, .5));  
+    
+}
+.burbuja{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 32%;
+    top: 200px;
+    border-radius: 100px;
+}
+.burbuja:hover{
+    filter: drop-shadow(10px 10px  10px  rgb(0, 0, 0, .5));  
+}
+.creador{
+    height: fit-content;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: brown solid;
+    font-size: 12px;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: 70%;
+    top: 4em;
+}
+.creador:hover{
+    background-color: brown;
+    color: #fff;
+}
+.yosi{
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    top: -25px;
+    margin-left: 30px;
+}
